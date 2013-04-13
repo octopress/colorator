@@ -47,7 +47,12 @@ Gem::Specification.new do |s|
   ## THE MANIFEST COMMENTS, they are used as delimiters by the task.
   # = MANIFEST =
   s.files = %w[
-
+    Gemfile
+    LICENSE
+    Rakefile
+    colorator.gemspec
+    lib/colorator.rb
+    lib/colorator/core_ext.rb
   ]
   # = MANIFEST =
 
