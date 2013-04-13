@@ -73,6 +73,9 @@ task :console do
   sh "irb -rubygems -r ./lib/#{name}.rb"
 end
 
+require 'rspec/core/rake_task'
+RSpec::Core::RakeTask.new(:spec)
+
 #############################################################################
 #
 # Custom tasks (add your own tasks here)
