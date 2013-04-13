@@ -2,7 +2,7 @@
 
 Colorize your text for the terminal
 
-[![Build Status](https://travis-ci.org/octopress/colorator.png)](https://travis-ci.org/octopress/colorator)
+[![Build Status](https://travis-ci.org/octopress/colorator.png?branch=master)](https://travis-ci.org/octopress/colorator)
 
 ## Example
 
