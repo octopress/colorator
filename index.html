@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Colorator by octopress</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/octopress/colorator">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/octopress/colorator/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/octopress/colorator/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>Colorator</h1>
+          <p>Colorize your text in the terminal.</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/octopress">octopress</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></span>
+        </div>
+
+        <h2>Install</h2>
+
+<pre><code>gem install colorator
+</code></pre>
+
+<h2>Example</h2>
+
+<div class="highlight"><pre><span class="nb">require</span> <span class="s1">'colorator'</span>
+
+<span class="s2">"this string"</span><span class="o">.</span><span class="n">red</span>
+<span class="c1"># =&gt; \e[31mthis string\e[0m</span>
+<span class="s2">"my string"</span><span class="o">.</span><span class="n">blue</span>
+<span class="c1"># =&gt; \e[34mthis string\e[0m</span>
+<span class="c1"># etc...</span>
+</pre></div>
+
+<h2>Supported Colors</h2>
+
+<ul>
+<li>black</li>
+<li>red</li>
+<li>green</li>
+<li>yellow</li>
+<li>blue</li>
+<li>magenta</li>
+<li>cyan</li>
+<li>white</li>
+<li>bold</li>
+</ul><h2>Why</h2>
+
+<p>There are a bunch of gems that provide functionality like this, but none have
+as simple an API as this. Just call <code>"string".color</code> and your text will be
+colorized.</p>
+
+<h2>License</h2>
+
+<p>MIT. Written as a single Ruby file by Brandon Mathis, converted into a gem by
+Parker Moore.</p>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
