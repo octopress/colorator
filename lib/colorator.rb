@@ -1,3 +1,5 @@
+$:.unshift File.dirname(__FILE__)
+
 module Colorator
   VERSION = "0.1"
   ANSI_COLORS = {
