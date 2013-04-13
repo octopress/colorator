@@ -32,4 +32,5 @@ colorized.
 
 ## License
 
-MIT.
+MIT. Written as a single Ruby file by Brandon Mathis, converted into a gem by
+Parker Moore.

@@ -20,14 +20,14 @@ Gem::Specification.new do |s|
   ## Make sure your summary is short. The description may be as long
   ## as you like.
   s.summary     = "String core extensions for terminal coloring."
-  s.description = "Colorize text in the terminal ."
+  s.description = "Colorize text in the terminal."
 
   ## List the primary authors. If there are a bunch of authors, it's probably
   ## better to set the email to an email list or something. If you don't have
   ## a custom homepage, consider using your GitHub URL or the like.
-  s.authors  = ["Parker Moore"]
-  s.email    = 'parkrmoore@gmail.com'
-  s.homepage = 'http://github.com/octopress/colorator'
+  s.authors  = ["Parker Moore", "Brandon Mathis"]
+  s.email    = ["parkrmoore@gmail.com", "brandon@imathis.com"]
+  s.homepage = 'https://github.com/octopress/colorator'
 
   ## This gets added to the $LOAD_PATH so that 'lib/NAME.rb' can be required as
   ## require 'NAME.rb' or'/lib/NAME/file.rb' can be as require 'NAME/file.rb'
