@@ -11,8 +11,8 @@ describe String do
 
   it "colors the text properly" do
     Colorator::ANSI_COLORS.each do |color, code|
-      expect(string.send(color.to_sym)).to include(code.to_s)
-      expect(string.send(color.to_sym)).to eq("\e[#{code}m#{string}\e[0m")
+      expect(string.send(color)).to include(code.to_s)
+      expect(string.send(color)).to eq("\e[#{code}m#{string}\e[0m")
     end
   end
 end
