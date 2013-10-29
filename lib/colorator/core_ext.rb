@@ -4,7 +4,7 @@ class String
     "\e[#{color_code}m#{self}\e[0m"
   end
 
-  Colorator::ANSI_COLORS.each do |key, value|
+  Colorator::ANSI_COLORS.each do |color, code|
     define_method(key) { colorize(value) }
   end
 end
