@@ -5,6 +5,6 @@ class String
   end
 
   Colorator::ANSI_COLORS.each do |color, code|
-    define_method(key) { colorize(value) }
+    define_method(color) { colorize(code) }
   end
 end
