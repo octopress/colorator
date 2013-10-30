@@ -11,6 +11,7 @@
 ### Development Fixes
 
 - Convert to new RSpec expectation syntax (#1)
+- Fix `String#blue` result in README (#4)
 
 ## 0.1 / 2013-04-13
 
