@@ -4,6 +4,8 @@
 
 ### Minor Enhancements
 
+- Delete unnecessary `Symbol#to_sym` (#2)
+
 ### Bug Fixes
 
 ### Development Fixes
