@@ -5,6 +5,7 @@
 ### Minor Enhancements
 
 - Delete unnecessary `Symbol#to_sym` (#2)
+- Change argument name of `Enumerator#each` for better code legibility (#3)
 
 ### Bug Fixes
 
