@@ -10,7 +10,7 @@ Colorize your text for the terminal
 "this string".red
 # => \e[31mthis string\e[0m
 "my string".blue
-# => \e[34mthis string\e[0m
+# => \e[34mmy string\e[0m
 # etc...
 ```
 
