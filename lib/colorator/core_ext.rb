@@ -1,10 +1,9 @@
 class String
-  # colorization
-  def colorize(color_code)
-    "\e[#{color_code}m#{self}\e[0m"
-  end
-
-  Colorator::ANSI_COLORS.each do |color, code|
-    define_method(color) { colorize(code) }
+  Colorator::CORE_METHODS.each do |method|
+    define_method method do |*args|
+      Colorator.public_send(method,
+        self, *args
+      )
+    end
   end
 end
