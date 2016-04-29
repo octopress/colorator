@@ -16,15 +16,24 @@ Colorize your text for the terminal
 
 ## Supported Colors
 
-- black
-- red
-- green
-- yellow
-- blue
-- magenta
-- cyan
-- white
-- bold
+- `red`
+- `black`
+- `green`
+- `yellow`
+- `magenta`
+- `white`
+- `blue`
+- `cyan`
+- `bold`
+
+## Other supported Ansi methods
+
+- `clear_line`
+- `has_ansi?`, `has_color?`
+- `strip_ansi`, `strip_color`
+- `reset_ansi`, `reset_color`
+- `clear_screen`
+- `ansi_jump`
 
 ## Why
 
