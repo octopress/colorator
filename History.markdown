@@ -2,6 +2,8 @@
 
 ### Major enhancements
 
+- Merge Simple::ANSI and Colorator. (#7)
+
 ### Minor Enhancements
 
 - Delete unnecessary `Symbol#to_sym` (#2)
