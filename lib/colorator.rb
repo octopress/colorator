@@ -2,7 +2,7 @@ $:.unshift File.dirname(__FILE__)
 
 module Colorator
   module_function
-  VERSION = "0.1"
+  VERSION = "1.0.0"
 
   # --------------------------------------------------------------------------
 
