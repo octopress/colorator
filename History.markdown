@@ -1,4 +1,4 @@
-## HEAD
+## 1.0.0 /2016-04-28
 
 ### Major enhancements
 
@@ -8,8 +8,6 @@
 
 - Delete unnecessary `Symbol#to_sym` (#2)
 - Change argument name of `Enumerator#each` for better code legibility (#3)
-
-### Bug Fixes
 
 ### Development Fixes
 
