@@ -86,7 +86,7 @@ module Colorator
   # --------------------------------------------------------------------------
 
   Colorator::ANSI_COLORS.each do |color, code|
-    define_method color do |str|
+    define_singleton_method color do |str|
       colorize(
         str, code
       )
