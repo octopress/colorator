@@ -1,10 +1,10 @@
-## HEAD
+## 1.1.0 / 2016-06-28
 
 ### Minor Enhancements
 
 * Support jruby (#8)
 
-## 1.0.0 /2016-04-28
+## 1.0.0 / 2016-04-28
 
 ### Major enhancements
 
