@@ -108,4 +108,4 @@ module Colorator
   )
 end
 
-require "colorator/core_ext"
+require 'colorator/core_ext'
