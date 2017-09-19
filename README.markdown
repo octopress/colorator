@@ -14,7 +14,7 @@ Colorize your text for the terminal
 # etc...
 ```
 
-## Supported Colors
+## Supported Text Colors
 
 - `red`
 - `black`
@@ -24,7 +24,23 @@ Colorize your text for the terminal
 - `white`
 - `blue`
 - `cyan`
+
+## Supported Background Colors
+
+- `red`
+- `black`
+- `green`
+- `yellow`
+- `magenta`
+- `white`
+- `blue`
+- `cyan`
+
+## Supported Text Style
+
 - `bold`
+- `dim`
+- `underlined`
 
 ## Other supported Ansi methods
 

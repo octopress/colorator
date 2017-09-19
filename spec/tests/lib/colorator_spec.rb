@@ -1,6 +1,6 @@
 require "spec/helper"
 describe Colorator do
-  Colorator::ANSI_COLORS.each do |color, code|
+  Colorator::ANSI_HASH.each do |color, code|
     it "colors the text #{color} properly" do
       expect(Colorator.send(color, "string")).to include code.to_s
       expect(Colorator.send(color, "string")).to eq(
