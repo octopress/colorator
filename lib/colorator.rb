@@ -1,4 +1,5 @@
-$:.unshift File.dirname(__FILE__)
+# $:.unshift File.dirname(__FILE__)
+$LOAD_PATH.unshift File.dirname(__FILE__)
 
 module Colorator
   module_function
@@ -7,7 +8,18 @@ module Colorator
   # --------------------------------------------------------------------------
 
   ANSI_MATCHR = /\x1b.*?[jkmsuABGKH]/
-  ANSI_COLORS = {
+  ANSI_BACKGROUND_COLORS = {
+    :bg_black   => 40,
+    :bg_red     => 41,
+    :bg_green   => 42,
+    :bg_yellow  => 43,
+    :bg_blue    => 44,
+    :bg_magenta => 45,
+    :bg_cyan    => 46,
+    :bg_white   => 47
+  }
+  
+  ANSI_TEXT_COLORS = {
     :black   => 30,
     :red     => 31,
     :green   => 32,
@@ -15,9 +27,16 @@ module Colorator
     :blue    => 34,
     :magenta => 35,
     :cyan    => 36,
-    :white   => 37,
-    :bold    => 1
+    :white   => 37
   }
+
+  ANSI_TEXT_STYLE = {
+    :bold => 1,
+    :dim => 2,
+    :underlined => 4,
+  }
+
+  ANSI_HASH = [ANSI_TEXT_COLORS, ANSI_BACKGROUND_COLORS, ANSI_TEXT_STYLE].inject(&:merge)
 
   # --------------------------------------------------------------------------
   # Allows you to check if a string currently has ansi.
@@ -85,7 +104,7 @@ module Colorator
 
   # --------------------------------------------------------------------------
 
-  Colorator::ANSI_COLORS.each do |color, code|
+  Colorator::ANSI_HASH.each do |color, code|
     define_singleton_method color do |str|
       colorize(
         str, code
